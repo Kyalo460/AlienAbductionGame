@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 import pygame
 import random
 import sys
@@ -228,11 +229,11 @@ while running:
                 pygame.draw.line(screen, YELLOW, (player_rectangle.centerx, player_rectangle.centery),
                                  (player_rectangle.centerx, target.bottom), 2)
 
-            # Change the colour of target to red
-            pygame.draw.rect(screen, RED, target)
-            targets.remove(target)
-            current_score += 1
-            score += 1
+                # Change the colour of target to red
+                pygame.draw.rect(screen, RED, target)
+                targets.remove(target)
+                current_score += 1
+                score += 1
 
     info_line_y = 10
     info_spacing = 75
